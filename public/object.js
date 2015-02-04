@@ -24,7 +24,7 @@ var unique = function(array) {
   This function should accept a number as a parameter.
   It should return the value of the number times 3.
 */
-var triple = function(number) {
+var tripler = function(number) {
 
 }
 
@@ -32,7 +32,7 @@ var triple = function(number) {
   This function should accept an object as a parameter.
   It should return the object with all of its values tripled.
 */
-var objectTriple = function(number) {
+var objectTripler = function(number) {
 
 }
 
