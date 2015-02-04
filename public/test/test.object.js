@@ -7,10 +7,10 @@ describe("Object", function(){
       // You can put dot-notation objects and methods
       // on separate lines to make them easier to read
 
-      expect(frequency["a", "b", "c", "c", "b", "c", "d"])
+      expect(frequency(["a", "b", "c", "c", "b", "c", "d"]))
         .to.deep.equal({ a: 1, b: 2, c: 3, d: 1})
 
-      expect(frequency["a", "b", "c", "d", "e", "f"])
+      expect(frequency(["a", "b", "c", "d", "e", "f"]))
         .to.deep.equal({ a: 1, b: 1, c: 1, d: 1, e: 1, f: 1 })
 
       expect(frequency(["a", "a", "a", "a", "a"]))
@@ -24,10 +24,10 @@ describe("Object", function(){
     it("should have a unique items function", function(){
 
       expect(unique(["d", "b", "c", "c", "b", "c", "a"]))
-        .to.deep.equal(["a", "b", "c", "d"]);
+        .to.include.members(["a", "b", "c", "d"]);
 
       expect(unique(["a", "b", "c", "d", "e", "f"]))
-        .to.deep.equal(["a", "b", "c", "d", "e", "f"]);
+        .to.include.members(["a", "b", "c", "d", "e", "f"]);
 
       expect(unique(["a", "a", "a", "a", "a"]))
         .to.deep.equal(["a"]);
