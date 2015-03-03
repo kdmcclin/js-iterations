@@ -24,10 +24,10 @@ describe("Object", function(){
     it("should have a unique items function", function(){
 
       expect(unique(["d", "b", "c", "c", "b", "c", "a"]))
-        .toContain(["a", "b", "c", "d"]);
+        .toEqual(["a", "b", "c", "d"]);
 
       expect(unique(["a", "b", "c", "d", "e", "f"]))
-        .toContain(["a", "b", "c", "d", "e", "f"]);
+        .toEqual(["a", "b", "c", "d", "e", "f"]);
 
       expect(unique(["a", "a", "a", "a", "a"]))
         .toEqual(["a"]);
