@@ -96,7 +96,7 @@ describe("Object", function(){
     it("should work correctly", function(){
 
       expect(pluck([ { a: 1, b: 2 }, { a: 3 }, { a: 4, c: 5 }], "a"))
-        .toEqual([1, 3, 5]);
+        .toEqual([1, 3, 4]);
 
     });
 
