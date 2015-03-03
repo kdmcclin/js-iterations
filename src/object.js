@@ -5,8 +5,20 @@
 
   For instance, [ "a", "b", "c", "b" ] would produce { "a": 1, "b": 2, "c": 1 }
 */
-var frequency = function(number) {
+var frequency = function(array) {
+  var letters = [];
 
+  var object = {};
+
+  for(var i = 0; i < array.length; i++){
+    if (letters.indexOf(array[i]) === -1){
+      object[array[i]] = 1;
+      letters.push(array[i])
+    } else {
+      object[array[i]] += 1;
+    }
+  }
+  return object
 }
 
 /*
@@ -17,7 +29,7 @@ var frequency = function(number) {
   For instance, [ "a", "b", "c", "b" ] would produce [ "a", "b", "c" ].
 */
 var unique = function(array) {
-
+  
 }
 
 /*
