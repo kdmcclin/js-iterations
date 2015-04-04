@@ -1,3 +1,5 @@
+**__NOTE: Trying out some of The Iron Yard JavaScript curriculum.  My solutions are located on the jasmine branch in order to maintain the original code template of this master branch.__**
+
 ## JavaScript - Objects and Iterations
 
 ### Description
